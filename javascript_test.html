@@ -1,0 +1,21 @@
+<head>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+	<!--
+		this element will display
+		the variable. It is empty as
+		it will be filled from javascript.
+	-->
+	<h1 id="number"
+		onclick="countup();">
+	</h1>
+</body>
+<script type="text/javascript">
+	var counter = 0;
+	$("#number").html(counter);
+	function countup(){
+	counter = counter + 1;
+	$("#number").html(counter);
+	}
+</script>
